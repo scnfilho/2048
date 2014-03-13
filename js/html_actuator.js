@@ -120,3 +120,11 @@ HTMLActuator.prototype.message = function (won) {
 HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-won", "game-over");
 };
+
+HTMLActuator.prototype.getStepCode = function () {
+	return document.getElementById("step-code").value;
+}
+
+HTMLActuator.prototype.onStartPlayer = function (callback) {
+	return document.getElementById("start-player").addEventListener('click', callback);
+}

@@ -428,6 +428,16 @@ hr {
   margin-top: 50px;
 }
 
+#step-code { 
+  width: 500px; 
+  height: 200px;
+  font-family: Fixed, monospace;
+}
+
+#start-player { 
+  font-size: large;
+}
+
 @include smaller(480px) {
   // Redefine variables for smaller screens
   $field-width: 280px;

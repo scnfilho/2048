@@ -452,6 +452,14 @@ hr {
 .game-explanation {
   margin-top: 50px; }
 
+#step-code { 
+  width: 500px; 
+  height: 200px;
+  font-family: Fixed, monospace; }
+
+#start-player { 
+  font-size: large; }
+
 @media screen and (max-width: 480px) {
   html, body {
     font-size: 15px; }

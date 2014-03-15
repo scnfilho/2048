@@ -52,6 +52,12 @@ KeyboardInputManager.prototype.listen = function () {
       if (event.which === 32) self.restart.bind(self)(event);
     }
   });
+  
+  
+  //Protect code textarea
+  document.getElementById("step-code").addEventListener("keydown", function (event) {
+    event.stopPropagation();
+  });
 
   var retry = document.getElementsByClassName("retry-button")[0];
   retry.addEventListener("click", this.restart.bind(this));
